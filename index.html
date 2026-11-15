@@ -65,7 +65,37 @@
           5. git add . / git commit -m "Add project" / git push
         -->
 
-        <!-- ---------- Credit default scorecard (newest, featured) ---------- -->
+        <!-- ---------- Customer segmentation (newest, featured) ---------- -->
+        <article class="project project-featured">
+          <header class="project-header">
+            <p class="kind">Data science and Power BI</p>
+            <h3>Credit card customer segments</h3>
+          </header>
+          <a class="project-media" href="https://github.com/DataKritii/credit-card-customer-segmentation">
+            <img src="assets/images/customer-segments.jpg" alt="Scatter chart of 8,949 cardholders coloured by their six K-means segments" loading="lazy" width="1060" height="795">
+          </a>
+          <div class="project-body">
+            <p>Groups 8,949 cardholders into six behavioural segments with K-means clustering, each with a persona, a suggested action and a risk view. The segments are delivered to business users through an interactive Power BI report built on a star schema with DAX measures.</p>
+            <ul class="results">
+              <li>The two cash-using segments are <strong>39%</strong> of customers but hold <strong>69%</strong> of all balances</li>
+              <li><strong>Near-limit revolvers</strong> (13% of customers) use a median 86% of their limit: a group for early-warning monitoring</li>
+              <li>Stable segments: re-running the clustering gives <strong>near-identical</strong> groups</li>
+            </ul>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>scikit-learn</li><li>K-means</li><li>Power BI</li><li>DAX</li>
+            </ul>
+            <div class="actions">
+              <!-- Once the PDF and video exist, paste their links in href="" below; the buttons then switch on automatically.
+                   PDF example: https://github.com/DataKritii/credit-card-customer-segmentation/blob/main/powerbi/credit_card_segments.pdf -->
+              <a class="btn btn-primary" href="" data-coming-soon="Report (PDF) – coming soon">View the report (PDF)</a>
+              <a class="btn btn-ghost" href="" data-coming-soon="Watch the walkthrough – coming soon">Watch the walkthrough</a>
+              <a class="btn btn-ghost" href="https://github.com/DataKritii/credit-card-customer-segmentation">View the code</a>
+              <a class="text-link" href="https://github.com/DataKritii/credit-card-customer-segmentation/blob/main/notebooks/credit_card_segmentation_kmeans.ipynb">Read the notebook</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Credit default scorecard (featured) ---------- -->
         <article class="project project-featured">
           <header class="project-header">
             <p class="kind">Data science</p>
@@ -151,7 +181,6 @@
         <div class="next-up">
           <h3>Next up</h3>
           <ul>
-            <li><strong>Customer segmentation.</strong> K-means clustering of cardholder behaviour into segments with business personas.</li>
             <li><strong>Bank churn model with monitoring.</strong> Model comparison, a model card, and drift checks with the population stability index.</li>
             <li><strong>A/B test analysis.</strong> Power analysis, randomization checks, significance testing with confidence intervals, and a decision memo.</li>
           </ul>
@@ -245,11 +274,12 @@
     });
 
     // "Open the live dashboard": until a link is pasted into href="", show a disabled label instead
-    document.querySelectorAll("[data-live-link]").forEach(function (link) {
+    // Same for any button marked data-coming-soon, using its own label
+    document.querySelectorAll("[data-live-link], [data-coming-soon]").forEach(function (link) {
       if (!link.getAttribute("href")) {
         var label = document.createElement("span");
         label.className = "btn btn-disabled";
-        label.textContent = "Live dashboard coming soon";
+        label.textContent = link.getAttribute("data-coming-soon") || "Live dashboard coming soon";
         link.replaceWith(label);
       }
     });
