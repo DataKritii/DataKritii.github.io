@@ -65,7 +65,67 @@
           5. git add . / git commit -m "Add project" / git push
         -->
 
-        <!-- ---------- Customer segmentation (newest, featured) ---------- -->
+        <!-- ---------- Retention offer A/B test (newest, featured) ---------- -->
+        <article class="project project-featured">
+          <header class="project-header">
+            <p class="kind">Data science and Power BI</p>
+            <h3>Retention offer A/B test</h3>
+          </header>
+          <a class="project-media" href="https://github.com/DataKritii/retention-offer-ab-test">
+            <img src="assets/images/retention-ab-test.jpg" alt="Bar chart of 90-day churn for control and offer groups: 8.2 points lower with the offer overall, 15.7 points lower for very high risk customers and not significant for medium risk" loading="lazy" width="1060" height="795">
+          </a>
+          <div class="project-body">
+            <p>A randomised experiment testing whether a retention offer keeps high-risk bank customers, run end to end: a plan written in advance, a power calculation, randomisation checks, significance tests with confidence intervals, a guardrail and a decision memo. The Power BI report calculates the statistics in DAX, so every slicer re-runs the test.</p>
+            <ul class="results">
+              <li>The offer cut 90-day churn by <strong>8.2 points</strong> (95% CI 4.9 to 11.4), keeping about 21% of would-be leavers</li>
+              <li>Targeting High and Very high risk customers only: <strong>€21.5K</strong> per 1,000 eligible customers vs €15.8K for offering everyone</li>
+              <li>Shows why not to peek: checking weekly would raise false positives from <strong>5% to 12%</strong></li>
+            </ul>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>SciPy</li><li>statsmodels</li><li>A/B testing</li><li>Power BI</li><li>DAX</li>
+            </ul>
+            <div class="actions">
+              <!-- Once the PDF and video exist, paste their links in href="" below; the buttons then switch on automatically.
+                   PDF example: https://github.com/DataKritii/retention-offer-ab-test/blob/main/powerbi/retention_offer_ab_test.pdf -->
+              <a class="btn btn-primary" href="" data-coming-soon="Report (PDF) – coming soon">View the report (PDF)</a>
+              <a class="btn btn-ghost" href="" data-coming-soon="Watch the walkthrough – coming soon">Watch the walkthrough</a>
+              <a class="btn btn-ghost" href="https://github.com/DataKritii/retention-offer-ab-test">View the code</a>
+              <a class="text-link" href="https://github.com/DataKritii/retention-offer-ab-test/blob/main/DECISION_MEMO.md">Read the decision memo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Bank churn model with monitoring ---------- -->
+        <article class="project project-featured">
+          <header class="project-header">
+            <p class="kind">Data science and Power BI</p>
+            <h3>Bank churn model with monitoring</h3>
+          </header>
+          <a class="project-media" href="https://github.com/DataKritii/bank-churn-model-monitoring">
+            <img src="assets/images/churn-monitoring.jpg" alt="Monthly model health for 2025: status green January to August, amber in September and red from October, as actual churn rises above the model's prediction" loading="lazy" width="1060" height="795">
+          </a>
+          <div class="project-body">
+            <p>Builds a churn model and shows what owning it involves: a documented fair-lending decision, a champion chosen from four models, calibration and fairness checks, a retention business case and a model card. A simulated production year feeds a Power BI monitoring report with green, amber and red thresholds and what-if retention planning.</p>
+            <ul class="results">
+              <li>Gradient boosting chosen from four models: test AUC <strong>0.80</strong>, with <strong>3.3×</strong> the average churn rate in the top 10% of scores</li>
+              <li>Monitoring flagged input drift in <strong>September</strong>, two months before the model's scores shifted, and went red when a market shock hit in October</li>
+              <li>Model-targeted retention: <strong>€25.6K</strong> vs €11.1K for contacting every customer, at a break-even churn probability of 16.7%</li>
+            </ul>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>scikit-learn</li><li>Gradient boosting</li><li>Model monitoring</li><li>Power BI</li><li>DAX</li>
+            </ul>
+            <div class="actions">
+              <!-- Once the PDF and video exist, paste their links in href="" below; the buttons then switch on automatically.
+                   PDF example: https://github.com/DataKritii/bank-churn-model-monitoring/blob/main/powerbi/bank_churn_monitoring.pdf -->
+              <a class="btn btn-primary" href="" data-coming-soon="Report (PDF) – coming soon">View the report (PDF)</a>
+              <a class="btn btn-ghost" href="" data-coming-soon="Watch the walkthrough – coming soon">Watch the walkthrough</a>
+              <a class="btn btn-ghost" href="https://github.com/DataKritii/bank-churn-model-monitoring">View the code</a>
+              <a class="text-link" href="https://github.com/DataKritii/bank-churn-model-monitoring/blob/main/notebooks/bank_churn_model_monitoring.ipynb">Read the notebook</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Customer segmentation ---------- -->
         <article class="project project-featured">
           <header class="project-header">
             <p class="kind">Data science and Power BI</p>
@@ -91,6 +151,35 @@
               <a class="btn btn-ghost" href="" data-coming-soon="Watch the walkthrough – coming soon">Watch the walkthrough</a>
               <a class="btn btn-ghost" href="https://github.com/DataKritii/credit-card-customer-segmentation">View the code</a>
               <a class="text-link" href="https://github.com/DataKritii/credit-card-customer-segmentation/blob/main/notebooks/credit_card_segmentation_kmeans.ipynb">Read the notebook</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Term deposit campaign targeting (featured) ---------- -->
+        <article class="project project-featured">
+          <header class="project-header">
+            <p class="kind">Data science</p>
+            <h3>Term deposit campaign targeting</h3>
+          </header>
+          <a class="project-media" href="https://github.com/DataKritii/term-deposit-marketing-decision-tree">
+            <img src="assets/images/term-deposit-dashboard.jpg" alt="Campaign planner dashboard: calling the top 17% of clients makes 1,400 calls, reaches 593 subscribers and earns €22,650, with profit and gains curves" loading="lazy" width="1060" height="810">
+          </a>
+          <div class="project-body">
+            <p>Ranks bank clients by their chance of subscribing to a term deposit, so a phone campaign reaches more subscribers with fewer calls. A pruned decision tree gives readable rules behind every score, a random forest gives the best ranking, and an out-of-time test shows what happens when the economy shifts after training. Delivered as an interactive dashboard for scoring clients and planning campaigns.</p>
+            <ul class="results">
+              <li>The top 10% of clients subscribe at <strong>52%</strong>, a lift of <strong>4.6×</strong>, reaching 46% of all subscribers</li>
+              <li>Calling the most promising 17% earns <strong>more than four times</strong> the profit of calling everyone (illustrative €5 per call, €50 per subscription)</li>
+              <li>Out-of-time test: with interest rates at or below the lowest level seen in training, the single tree dropped to <strong>AUC 0.51</strong> while the forest held 0.74</li>
+            </ul>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>scikit-learn</li><li>Decision trees</li><li>Random forest</li><li>Streamlit</li><li>Plotly</li>
+            </ul>
+            <div class="actions">
+              <!-- PASTE YOUR STREAMLIT LINK in href="" below (e.g. https://term-deposit-targeting.streamlit.app).
+                   While it's empty, the button shows "Live dashboard coming soon". -->
+              <a class="btn btn-primary" href="" data-live-link>Open the live dashboard</a>
+              <a class="btn btn-ghost" href="https://github.com/DataKritii/term-deposit-marketing-decision-tree">View the code</a>
+              <a class="text-link" href="https://github.com/DataKritii/term-deposit-marketing-decision-tree/blob/main/notebooks/term_deposit_decision_tree_random_forest.ipynb">Read the notebook</a>
             </div>
           </div>
         </article>
@@ -177,14 +266,7 @@
           <div class="tableau-panel" id="tableau-panel" hidden></div>
         </article>
 
-        <!-- ---------- Next up: planned projects (delete or move up as they're finished) ---------- -->
-        <div class="next-up">
-          <h3>Next up</h3>
-          <ul>
-            <li><strong>Bank churn model with monitoring.</strong> Model comparison, a model card, and drift checks with the population stability index.</li>
-            <li><strong>A/B test analysis.</strong> Power analysis, randomization checks, significance testing with confidence intervals, and a decision memo.</li>
-          </ul>
-        </div>
+        <!-- Next up: to list planned projects again, add a <div class="next-up"> block here (see the git history for the old one). -->
       </div>
     </section>
 
