@@ -65,7 +65,36 @@
           5. git add . / git commit -m "Add project" / git push
         -->
 
-        <!-- ---------- Project 1: featured (wide card, amber marker) ---------- -->
+        <!-- ---------- Credit default scorecard (newest, featured) ---------- -->
+        <article class="project project-featured">
+          <header class="project-header">
+            <p class="kind">Data science</p>
+            <h3>Credit card default scorecard</h3>
+          </header>
+          <a class="project-media" href="https://github.com/DataKritii/credit-default-logistic-regression">
+            <img src="assets/images/credit-default-dashboard.jpg" alt="Credit default scorecard dashboard: probability of default, score, risk band, reasons for the score and a points breakdown" loading="lazy" width="1060" height="810">
+          </a>
+          <div class="project-body">
+            <p>Flags credit card accounts likely to default next month, so a bank can step in early with a reminder, a payment plan or a limit review. Built the way regulated credit-risk models are: weight-of-evidence binning, an interpretable logistic regression, a points-based scorecard with reasons for every score, a cost-based cut-off, and checks for fairness and drift.</p>
+            <ul class="results">
+              <li><strong>Gini 0.49</strong> on held-out data, with predicted default rates matching actual (22.0% vs 22.1%)</li>
+              <li>Catches <strong>61%</strong> of defaulters while flagging 32% of accounts, cutting expected cost by <strong>45%</strong></li>
+              <li>Sex, marital status and age <strong>excluded</strong>, with outcomes checked by group afterwards</li>
+            </ul>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>statsmodels</li><li>scikit-learn</li><li>Streamlit</li><li>Plotly</li>
+            </ul>
+            <div class="actions">
+              <!-- PASTE YOUR STREAMLIT LINK in href="" below (e.g. https://credit-default-scorecard.streamlit.app).
+                   While it's empty, the button shows "Live dashboard coming soon". -->
+              <a class="btn btn-primary" href="" data-live-link>Open the live dashboard</a>
+              <a class="btn btn-ghost" href="https://github.com/DataKritii/credit-default-logistic-regression">View the code</a>
+              <a class="text-link" href="https://github.com/DataKritii/credit-default-logistic-regression/blob/main/notebooks/credit_default_logistic_regression.ipynb">Read the notebook</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Property value (featured) ---------- -->
         <article class="project project-featured">
           <header class="project-header">
             <p class="kind">Data science</p>
@@ -122,9 +151,9 @@
         <div class="next-up">
           <h3>Next up</h3>
           <ul>
-            <li><strong>Credit card default prediction.</strong> A logistic regression probability-of-default model, evaluated with AUC, Gini and KS.</li>
             <li><strong>Customer segmentation.</strong> K-means clustering of cardholder behaviour into segments with business personas.</li>
             <li><strong>Bank churn model with monitoring.</strong> Model comparison, a model card, and drift checks with the population stability index.</li>
+            <li><strong>A/B test analysis.</strong> Power analysis, randomization checks, significance testing with confidence intervals, and a decision memo.</li>
           </ul>
         </div>
       </div>
