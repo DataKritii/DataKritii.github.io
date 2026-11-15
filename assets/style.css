@@ -97,7 +97,9 @@ nav a:hover { border-bottom-color: var(--amber); }
   white-space: nowrap;
   margin-bottom: 1.5rem;
 }
-.lede { font-size: 1.3rem; line-height: 1.55; max-width: 46ch; }
+/* The intro block is exactly as wide as the one-line tagline, so the description spans it */
+.hero-inner { width: min-content; max-width: 100%; }
+.lede { font-size: 1.3rem; line-height: 1.55; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(3.5rem, 8vw, 6rem) 0; }
@@ -187,6 +189,7 @@ nav a:hover { border-bottom-color: var(--amber); }
   .wordmark { font-size: 1.05rem; }
   .skills-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .hero h1 { white-space: normal; }   /* phones: too narrow for one line at a readable size */
+  .hero-inner { width: auto; }
   .btn { width: 100%; text-align: center; }
 }
 @media (max-width: 420px) {
