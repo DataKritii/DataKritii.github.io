@@ -131,9 +131,13 @@ nav a:hover { border-bottom-color: var(--amber); }
   padding: clamp(1.25rem, 2.5vw, 1.75rem) clamp(1.5rem, 3vw, 2.25rem);
   border-bottom: 1px solid rgba(178, 165, 155, 0.6);
 }
-.project-header h3 { font-size: clamp(1.35rem, 2.2vw, 1.75rem); margin-top: .25rem; }
+.project-header h3 { font-size: clamp(1.35rem, 2.2vw, 1.75rem); margin-top: 0; }
 .project-body { padding: clamp(1.5rem, 3vw, 2.25rem); }
-.kind { font-family: var(--font-head); font-weight: 600; font-size: .9rem; color: var(--ink-soft); margin: 0; }
+.kind { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: 0 0 .6rem; }
+.kind li {
+  font-family: var(--font-head); font-size: .75rem; font-weight: 600; letter-spacing: .02em;
+  padding: .25rem .7rem; border: 1px solid var(--steel); border-radius: 999px; color: var(--charcoal);
+}
 .project-body > p { max-width: 62ch; }
 
 .results { list-style: none; padding: 0; margin: 1.25rem 0; border-left: 3px solid var(--khaki); }

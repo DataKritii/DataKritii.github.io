@@ -59,8 +59,8 @@
           HOW TO ADD A PROJECT
           1. Copy one <article class="project"> ... </article> block below.
           2. Paste it ABOVE the others, so the newest project comes first.
-          3. Change the title (in <header class="project-header">), text, tags and links. For "kind", use
-             "Business intelligence" or "Data science".
+          3. Change the title (in <header class="project-header">), text, tags and links. For "kind", list one
+             category per <li> (e.g. "Data science", "Power BI", "Business intelligence").
           4. Save a screenshot in assets/images/ and point the <img src> to it.
           5. git add . / git commit -m "Add project" / git push
         -->
@@ -68,7 +68,10 @@
         <!-- ---------- Retention offer A/B test (newest, featured) ---------- -->
         <article class="project project-featured">
           <header class="project-header">
-            <p class="kind">Data science and Power BI</p>
+            <ul class="kind" aria-label="Category">
+              <li>Data science</li>
+              <li>Power BI</li>
+            </ul>
             <h3>Retention offer A/B test</h3>
           </header>
           <a class="project-media" href="https://github.com/DataKritii/retention-offer-ab-test">
@@ -98,7 +101,10 @@
         <!-- ---------- Bank churn model with monitoring ---------- -->
         <article class="project project-featured">
           <header class="project-header">
-            <p class="kind">Data science and Power BI</p>
+            <ul class="kind" aria-label="Category">
+              <li>Data science</li>
+              <li>Power BI</li>
+            </ul>
             <h3>Bank churn model with monitoring</h3>
           </header>
           <a class="project-media" href="https://github.com/DataKritii/bank-churn-model-monitoring">
@@ -128,7 +134,10 @@
         <!-- ---------- Customer segmentation ---------- -->
         <article class="project project-featured">
           <header class="project-header">
-            <p class="kind">Data science and Power BI</p>
+            <ul class="kind" aria-label="Category">
+              <li>Data science</li>
+              <li>Power BI</li>
+            </ul>
             <h3>Credit card customer segments</h3>
           </header>
           <a class="project-media" href="https://github.com/DataKritii/credit-card-customer-segmentation">
@@ -145,9 +154,8 @@
               <li>Python</li><li>scikit-learn</li><li>K-means</li><li>Power BI</li><li>DAX</li>
             </ul>
             <div class="actions">
-              <!-- Once the PDF and video exist, paste their links in href="" below; the buttons then switch on automatically.
-                   PDF example: https://github.com/DataKritii/credit-card-customer-segmentation/blob/main/powerbi/credit_card_segments.pdf -->
-              <a class="btn btn-primary" href="" data-coming-soon="Report (PDF) – coming soon">View the report (PDF)</a>
+              <!-- Once the walkthrough video exists, paste its link in href="" below; the button then switches on automatically. -->
+              <a class="btn btn-primary" href="https://github.com/DataKritii/credit-card-customer-segmentation/blob/main/powerbi/credit_card_segments.pdf" data-coming-soon="Report (PDF) – coming soon">View the report (PDF)</a>
               <a class="btn btn-ghost" href="" data-coming-soon="Watch the walkthrough – coming soon">Watch the walkthrough</a>
               <a class="btn btn-ghost" href="https://github.com/DataKritii/credit-card-customer-segmentation">View the code</a>
               <a class="text-link" href="https://github.com/DataKritii/credit-card-customer-segmentation/blob/main/notebooks/credit_card_segmentation_kmeans.ipynb">Read the notebook</a>
@@ -158,7 +166,9 @@
         <!-- ---------- Term deposit campaign targeting (featured) ---------- -->
         <article class="project project-featured">
           <header class="project-header">
-            <p class="kind">Data science</p>
+            <ul class="kind" aria-label="Category">
+              <li>Data science</li>
+            </ul>
             <h3>Term deposit campaign targeting</h3>
           </header>
           <a class="project-media" href="https://github.com/DataKritii/term-deposit-marketing-decision-tree">
@@ -187,7 +197,9 @@
         <!-- ---------- Credit default scorecard (featured) ---------- -->
         <article class="project project-featured">
           <header class="project-header">
-            <p class="kind">Data science</p>
+            <ul class="kind" aria-label="Category">
+              <li>Data science</li>
+            </ul>
             <h3>Credit card default scorecard</h3>
           </header>
           <a class="project-media" href="https://github.com/DataKritii/credit-default-logistic-regression">
@@ -216,7 +228,9 @@
         <!-- ---------- Property value (featured) ---------- -->
         <article class="project project-featured">
           <header class="project-header">
-            <p class="kind">Data science</p>
+            <ul class="kind" aria-label="Category">
+              <li>Data science</li>
+            </ul>
             <h3>Property value prediction and LTV dashboard</h3>
           </header>
           <a class="project-media" href="https://github.com/DataKritii/property-value-prediction-linear-regression">
@@ -245,7 +259,9 @@
         <!-- ---------- Project 2: Tableau (interactive embed loads on click) ---------- -->
         <article class="project">
           <header class="project-header">
-            <p class="kind">Business intelligence</p>
+            <ul class="kind" aria-label="Category">
+              <li>Business intelligence</li>
+            </ul>
             <h3>U.S. discretionary spending since 2000</h3>
           </header>
           <div class="project-media">
